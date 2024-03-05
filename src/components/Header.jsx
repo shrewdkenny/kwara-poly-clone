@@ -23,7 +23,7 @@ const Header = ({}) => {
   const [nav, setNav] = useState(false);
   return (
     <>
-      <div className="flex justify-between items-center mt-5  w-full ">
+      <div className="container flex justify-between items-center mt-5 sticky h-20 w-full ">
         <div className="flex gap-2">
           <img src="./src/assets/images/logo.png" alt="" className="mt-1" />
           <h1 className="mt-4 text-3xl font-medium">Kwarapoly</h1>

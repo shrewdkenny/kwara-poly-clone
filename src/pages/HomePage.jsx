@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 const HomePage = () => {
   return (
     <>
-      <main className="container flex-wrap lg:flex-nowrap w-full h-screen">
+      <main className=" flex-wrap lg:flex-nowrap w-full h-screen bg-[#F5F4F6]">
         <Header />
         <Hero />
       </main>
