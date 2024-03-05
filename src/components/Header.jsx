@@ -23,17 +23,26 @@ const Header = ({}) => {
   const [nav, setNav] = useState(false);
   return (
     <>
-      <div className="container flex gap-2 justify-between items-center h-20 sticky top-0 w-full ">
+      <div className="flex justify-between items-center mt-5  w-full ">
         <div className="flex gap-2">
           <img src="./src/assets/images/logo.png" alt="" className="mt-1" />
           <h1 className="mt-4 text-3xl font-medium">Kwarapoly</h1>
         </div>
-        <ul className="hidden md:flex cursor-pointer">
+        <ul className="hidden md:flex flex-row justify-between gap-4 cursor-pointer text-sm mt-2 text-gray-600">
           {links.map(({ id, title }) => (
             <li key={id} className="px-4 cursor-pointer py-4">
               <a href>{title}</a>
             </li>
           ))}
+
+          <div className="flex ml-20 gap-[6px]">
+            <button className="border border-[#18753D] text-gray-600 text-xl rounded-full px-10 ">
+              Sign In
+            </button>
+            <button className="border bg-[#18753D] text-white text-xl rounded-full px-10">
+              Sign Up
+            </button>
+          </div>
         </ul>
         <div
           onClick={() => setNav(!nav)}
@@ -43,7 +52,7 @@ const Header = ({}) => {
         </div>
         {nav && (
           <ul className="flex md:hidden flex-col justify-center absolute top-0 h-screen w-full items-center ">
-            {links.map(({id, title}) => (
+            {links.map(({ id, title }) => (
               <li key={id} className="text-xl font-sm cursor-pointer py-4">
                 <a href>{title}</a>
               </li>
