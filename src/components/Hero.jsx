@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { CiMenuKebab } from "react-icons/ci";
 import TopStudents from "./TopStudents";
+import SideBarButtons from "./SideBarButtons";
 
 const Hero = () => {
   return (
@@ -30,39 +31,29 @@ const Hero = () => {
         </button>
 
         {/* HERO SECTION 2 */}
-        <div className=" flex flex-row w-[100vw] h-screen bg-[#fefefe]">
+        <div className=" flex flex-row w-[100vw] h-screen bg-[#fefefe] px-5">
           {/* Side Bar  */}
-          <div className="flex flex-col bg-[#ffffff] mt-[70px] p-5 cursor-pointer h-[745px]">
+          <div className="flex flex-col bg-[#ffffff] mt-[70px] p-5 cursor-pointer h-[745px] py-10">
             <div className="flex gap-2">
               <img src="./src/assets/images/logo.png" alt="" className=" h-7" />
               <h1 className=" text-xl font-medium">Kwarapoly</h1>
             </div>
-            <h1 className="mt-20 font-normal">Menu</h1>
-            <div className="flex flex-row justify-center items-center px-2 rounded-lg  text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
-              <FaHome />
-              <p className="container">Overview</p>
+            <div>
+              <h1 className="mt-[50px] font-normal">Menu</h1>
+              <SideBarButtons icon={<FaHome />} value="Overview" />
+              <SideBarButtons icon={<FaBookOpen />} value="Assignments" />
+              <SideBarButtons icon={<FaTools />} value="Notification" />
+              <div className=" border-b-2 border-gray-300 mt-5"></div>
             </div>
-            <div className="flex flex-row justify-center items-center px-2 rounded-lg text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
-              <FaBookOpen />
-              <p className="container">Assignments</p>
-            </div>
-            <div className="flex flex-row justify-center items-center px-2 rounded-lg text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
-              <FaBell />
-              <p className="container">Notification</p>
-            </div>
-            <div className="border border-[#efefef] mt-10"></div>
-
-            <h1 className="mt-10 font-normal">Account</h1>
-            <div className="flex flex-row justify-center items-center px-2 rounded-lg  text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
-              <FaComment />
-              <p className="container">Messages</p>
-              <div className="p-2 text-sm text-white font-thin flex justify-center items-center bg-[#ef6530] rounded-full w-5 h-5">
-                <p>5</p>
+            <div>
+              <h1 className="mt-[50px] font-normal">Account</h1>
+              <div className="relative flex flex-row">
+                <SideBarButtons icon={<FaComment />} value="Messages" />
+                <p className="w-8 h-8 bg-orange-500 rounded-full flex justify-center items-center  absolute top-7 bottom-0 right-2 text-white text-sm">
+                  5
+                </p>
               </div>
-            </div>
-            <div className="flex flex-row justify-center items-center px-2 rounded-lg  text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
-              <FaTools />
-              <p className="container">Settings</p>
+              <SideBarButtons icon={<FaTools />} value="Settings" />
             </div>
           </div>
 
