@@ -1,5 +1,12 @@
 import React from "react";
-import { FaTimes } from "react-icons/fa";
+import {
+  FaBell,
+  FaBookOpen,
+  FaEnvelope,
+  FaHome,
+  FaSearch,
+  FaSmile,
+} from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -20,19 +27,75 @@ const Hero = () => {
 
         {/* After Demo Button  */}
 
-        <div className="container flex flex-row w-full h-[80vh]  bg-[#fefefe]">
+        <div className="container flex flex-row w-full h-[100vh] bg-[#fefefe]">
           <div className="flex flex-col bg-[#ffffff] mt-20 w-[250px] p-5">
             <div className="flex gap-2">
               <img src="./src/assets/images/logo.png" alt="" className=" h-7" />
               <h1 className=" text-xl font-medium">Kwarapoly</h1>
             </div>
             <h1 className="mt-20">Menu</h1>
-          </div>
-          <div className="flex flex-row justify-between">
-            <div className="mt-20  ">
-              <input type="text" placeholder="search or type" />
+            <div className="">
+              <div className="flex flex-row justify-center items-center px-2 rounded-lg  text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
+                <FaHome />
+                <p className="container">Overview</p>
+              </div>
+              <div className="flex flex-row justify-center items-center px-2 rounded-lg text-[#aeaeb1] text-xl mt-5 h-[54px] w-[200px] hover:bg-[#18753D] hover:text-white">
+                <FaBookOpen />
+                <p className="container">Assignments</p>
+              </div>
             </div>
-           
+          </div>
+
+          <div className="flex flex-col">
+            <div className="hidden lg:flex flex-row justify-between w-[130%] px-5 mt-[120px]">
+              <div className=" relative">
+                <input
+                  type="text"
+                  placeholder="search or type"
+                  className="bg-[#f4f4f4] rounded-lg w-[350px] h-[40px] py-1 px-[50px] outline-none placeholder:text-2xl"
+                />
+                <FaSearch className="absolute top-2 ml-2 text-2xl  text-gray-500 " />
+              </div>
+              <div className="flex gap-10">
+                <FaEnvelope className="text-2xl" />
+                <FaBell className="text-2xl" />
+                <div className="flex flex-row gap-5">
+                  <div
+                    style={{
+                      backgroundImage: "url('./src/assets/images/one.png')",
+                    }}
+                    className="text-5xl bg-cover bg-center bg-no-repeat flex h-10 w-10 items-center justify-center rounded-full bg-orange-300"
+                  ></div>
+                  <div className="flex flex-col">
+                    <h1>Azeez Kehinde</h1>
+                    <p className="text-gray-500">student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:px-5 bg-[#f5f5f7] flex flex-row h-[80vh] w-[130%] mt-5">
+              <div className="flex flex-row gap-2">
+                {" "}
+                <div className="flex flex-col bg-white  h-[100px] w-[200px] mt-5 rounded-lg ">
+                  <h1 className="flex justify-center items-center mt-5">
+                    Total Assignment
+                  </h1>
+                  <h2 className=" mt-1 ml-9">20</h2>
+                </div>
+                <div className="flex flex-col bg-white h-[100px] w-[200px] mt-5 rounded-lg">
+                  <h1 className="flex justify-center items-center mt-5">
+                    Available Assignment
+                  </h1>
+                  <h2 className="mt-1 ml-5">10</h2>
+                </div>
+                <div className="flex flex-col bg-white  h-[100px] w-[200px] mt-5 rounded-lg">
+                  <h1 className="flex justify-center items-center mt-5">
+                    Completed Assignment
+                  </h1>
+                  <h2 className="mt-1 ml-4">5</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

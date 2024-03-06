@@ -19,7 +19,9 @@ const links = [
     title: "Testimonials",
   },
 ];
-const Header = ({}) => {
+const Header = ({
+  
+}) => {
   const [nav, setNav] = useState(false);
   return (
     <>
