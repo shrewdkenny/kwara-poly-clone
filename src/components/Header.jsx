@@ -19,9 +19,7 @@ const links = [
     title: "Testimonials",
   },
 ];
-const Header = ({
-  
-}) => {
+const Header = ({}) => {
   const [nav, setNav] = useState(false);
   return (
     <>
@@ -38,7 +36,7 @@ const Header = ({
           ))}
 
           <div className="flex ml-20 gap-[6px]">
-            <button className="border border-[#18753D] text-gray-600 text-xl rounded-full px-10 ">
+            <button className="border border-[#18753D] text-gray-600 text-xl rounded-full px-10 hover:bg-[#18753D] hover:text-white ">
               Sign In
             </button>
             <button className="border bg-[#18753D] text-white text-xl rounded-full px-10">
