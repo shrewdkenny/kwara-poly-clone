@@ -8,6 +8,8 @@ import {
   FaSearch,
   FaTools,
 } from "react-icons/fa";
+import { CiMenuKebab } from "react-icons/ci";
+import TopStudents from "./TopStudents";
 
 const Hero = () => {
   return (
@@ -28,7 +30,7 @@ const Hero = () => {
         </button>
 
         {/* HERO SECTION 2 */}
-        <div className=" flex flex-row w-[100vw] h-screen bg-[#fefefe] px-10">
+        <div className=" flex flex-row w-[100vw] h-screen bg-[#fefefe]">
           {/* Side Bar  */}
           <div className="flex flex-col bg-[#ffffff] mt-[70px] p-5 cursor-pointer h-[745px]">
             <div className="flex gap-2">
@@ -79,12 +81,9 @@ const Hero = () => {
                 <FaEnvelope className="text-2xl" />
                 <FaBell className="text-2xl" />
                 <div className="flex flex-row gap-5">
-                  <div
-                    style={{
-                      backgroundImage: "url('./src/assets/images/one.png')",
-                    }}
-                    className="text-5xl bg-cover bg-center bg-no-repeat flex h-10 w-10 items-center justify-center rounded-full bg-orange-300"
-                  ></div>
+                  <div className="p-5 bg-gray-300 rounded-full flex justify-center items-center h-5 w-5">
+                    🤵🏽
+                  </div>
                   <div className="flex flex-col">
                     <h1>Azeez Kehinde</h1>
                     <p className="text-gray-500">student</p>
@@ -94,10 +93,10 @@ const Hero = () => {
             </div>
 
             {/* ASSIGNMENT 1 SECTION */}
-            <div className="flex flex-row gap-[20px] w-full  h-[640px] bg-[#f5f5f7] mt-5">
+            <div className="flex flex-row gap-[20px] h-[640px] bg-[#f5f5f7] mt-5">
               <div className="flex flex-col">
-                <div className=" lg:px-5  flex flex-row h-auto mt-5">
-                  <div className="hidden lg:flex flex-row gap-5">
+                <div className="hidden lg:flex flex-row justify-evenly mt-5">
+                  <div className="container flex flex-row gap-5 ">
                     <div className="flex flex-col bg-white  h-[100px] w-[200px] mt-5 rounded-lg ">
                       <h1 className="flex justify-center items-center mt-5">
                         Total Assignment
@@ -120,27 +119,59 @@ const Hero = () => {
                 </div>
 
                 {/* TOP STUDENTS SECTION */}
-                <div className="lg:flex flex-col mt-10 ml-5 bg-white rounded-lg h-[450px] p-8">
+                <div className="lg: flex flex-col mt-10  bg-[#fcfcfcfc] rounded-lg h-[450px] p-8 m-5">
                   <div className=" flex flex-col">
                     <h1 className="font-sans-serif">Top Students</h1>
                     <p className="text-gray-400 mt-3 text-sm">
                       List of the students with the highest scores
                     </p>
                   </div>
+
+                  <div className=" flex flex-wrap gap-2">
+                    {/* LIST OF TOP STUDENTS DETAILS */}
+                    <TopStudents
+                      emoji="🙍🏾‍♂️"
+                      name="Abubakar Quadri"
+                      matricNumber="HND/21/COM/FT/100"
+                    />
+                    <TopStudents
+                      emoji="👨‍💼"
+                      name="Taiwo James"
+                      matricNumber="HND/21/COM/FT/150"
+                    />
+                    <TopStudents
+                      emoji="👨🏾‍🦲"
+                      name="Fawaz Abiola"
+                      matricNumber="HND/21/COM/FT/230"
+                    />
+                    <TopStudents
+                      emoji="🤵🏽"
+                      name="Timileyin Ogunleye"
+                      matricNumber="HND/21/COM/FT/300"
+                    />
+                    <TopStudents
+                      emoji="👨‍💼"
+                      name="Ajikanbi Emmanuel"
+                      matricNumber="HND/21/COM/FT/460"
+                    />
+                    <TopStudents
+                      emoji="👨🏽‍🏫"
+                      name="Akinyooye Stephen"
+                      matricNumber="HND/21/COM/FT/760"
+                    />
+                  </div>
                 </div>
               </div>
 
-              {/* ASSIGNMENTS SECTION */}
-              <div className=" flex flex-col mt-10 mr-10 w-[400px]  h-[590px] bg-[#fdfdfd] rounded-lg px-5 py-5">
+              {/* ASSIGNMENTS 2 SECTION */}
+              <div className=" flex flex-col mt-10  w-[450px]  h-[590px] bg-[#fdfdfd] rounded-lg px-5 py-5">
                 <div className="flex flex-row justify-between">
                   <h1 className="font-sans-serif">Assignments</h1>
                   <p className="bg-[#ffffff] px-4 py-1 border text-[14px] flex justify-center items-center rounded-xl font-sans-serif">
                     See all
                   </p>
                 </div>
-                <div className="flex flex-row bg-[#ffffff] h-[80px] w-[100%] mt-5 rounded-lg">
-                  deded
-                </div>
+                <div className="flex flex-row bg-[#ffffff] h-[80px] w-[350px] mt-5 rounded-lg"></div>
               </div>
             </div>
           </div>
