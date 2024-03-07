@@ -1,6 +1,7 @@
 import React from "react";
 import SideBar from "../components/SideBar";
 import OverViewPageHeader from "../components/OverViewPageHeader";
+import AssignmentDetails from "../components/AssignmentDetails";
 const OverView = () => {
   return (
     <div>
@@ -8,6 +9,7 @@ const OverView = () => {
         <SideBar />
         <div className="flex flex-col">
           <OverViewPageHeader />
+          <AssignmentDetails />
         </div>
       </div>
     </div>
