@@ -8,9 +8,10 @@ import {
   FaSearch,
   FaTools,
 } from "react-icons/fa";
-import { CiMenuKebab } from "react-icons/ci";
+
 import TopStudents from "./TopStudents";
 import SideBarButtons from "./SideBarButtons";
+import AssignmentsCards from "./AssignmentsCards";
 
 const Hero = () => {
   return (
@@ -29,10 +30,13 @@ const Hero = () => {
         <button className="flex justify-center items-center lg:border bg-[#18753D] text-white font-semi-normal rounded-full mb-20 px-10 py-4 mt-10">
           Request a Demo
         </button>
+        <div className="flex flex-row justify-center">
+          <img src="./src/assets/images/heroimage.png" alt="" />
+        </div>
 
-        {/* HERO SECTION 2 */}
-        <div className=" flex flex-row w-[100vw] h-screen bg-[#fefefe] px-5">
-          {/* Side Bar  */}
+        {/* <div className=" flex flex-row w-[100vw] h-screen bg-[#fefefe] px-5">
+        
+
           <div className="flex flex-col bg-[#ffffff] mt-[70px] p-5 cursor-pointer h-[745px] py-10">
             <div className="flex gap-2">
               <img src="./src/assets/images/logo.png" alt="" className=" h-7" />
@@ -58,7 +62,7 @@ const Hero = () => {
           </div>
 
           <div>
-            {/* Search section */}
+           
             <div className="hidden lg:flex flex-row justify-between px-5 mt-[120px] h-auto ">
               <div className="relative">
                 <input
@@ -83,7 +87,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* ASSIGNMENT 1 SECTION */}
             <div className="flex flex-row gap-[20px] h-[640px] bg-[#f5f5f7] mt-5">
               <div className="flex flex-col">
                 <div className="hidden lg:flex flex-row justify-evenly mt-5">
@@ -109,7 +112,7 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* TOP STUDENTS SECTION */}
+                
                 <div className="lg: flex flex-col mt-10  bg-[#fcfcfcfc] rounded-lg h-[450px] p-8 m-5">
                   <div className=" flex flex-col">
                     <h1 className="font-sans-serif">Top Students</h1>
@@ -119,7 +122,7 @@ const Hero = () => {
                   </div>
 
                   <div className=" flex flex-wrap gap-2">
-                    {/* LIST OF TOP STUDENTS DETAILS */}
+                   
                     <TopStudents
                       emoji="🙍🏾‍♂️"
                       name="Abubakar Quadri"
@@ -154,19 +157,20 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* ASSIGNMENTS 2 SECTION */}
-              <div className=" flex flex-col mt-10  w-[450px]  h-[590px] bg-[#fdfdfd] rounded-lg px-5 py-5">
+            
+              <div className=" flex flex-col mt-10  w-[500px]  h-[590px] bg-[#fdfdfd] rounded-lg px-5 py-5">
                 <div className="flex flex-row justify-between">
                   <h1 className="font-sans-serif">Assignments</h1>
                   <p className="bg-[#ffffff] px-4 py-1 border text-[14px] flex justify-center items-center rounded-xl font-sans-serif">
                     See all
                   </p>
                 </div>
-                <div className="flex flex-row bg-[#ffffff] h-[80px] w-[350px] mt-5 rounded-lg"></div>
+
+                <AssignmentsCards />
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
