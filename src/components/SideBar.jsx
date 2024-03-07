@@ -5,7 +5,6 @@ import {
   FaComment,
   FaDoorOpen,
   FaHome,
-  FaLongArrowAltUp,
   FaTools,
 } from "react-icons/fa";
 import { CiLogout } from "react-icons/ci";

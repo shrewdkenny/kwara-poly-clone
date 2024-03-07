@@ -2,24 +2,11 @@ import React from "react";
 import {
   FaArrowLeft,
   FaArrowRight,
-  FaBell,
-  FaBookOpen,
-  FaComment,
-  FaCopyright,
-  FaEnvelope,
   FaFacebook,
-  FaHome,
-  FaInstagram,
   FaRegCopyright,
-  FaSearch,
   FaStar,
-  FaTools,
   FaTwitter,
 } from "react-icons/fa";
-
-import TopStudents from "./TopStudents";
-import SideBarButtons from "./SideBarButtons";
-import AssignmentsCards from "./AssignmentsCards";
 import DemoButton from "./DemoButton";
 import { IoLogoInstagram } from "react-icons/io5";
 
