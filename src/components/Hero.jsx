@@ -5,17 +5,23 @@ import {
   FaBell,
   FaBookOpen,
   FaComment,
+  FaCopyright,
   FaEnvelope,
+  FaFacebook,
   FaHome,
+  FaInstagram,
+  FaRegCopyright,
   FaSearch,
   FaStar,
   FaTools,
+  FaTwitter,
 } from "react-icons/fa";
 
 import TopStudents from "./TopStudents";
 import SideBarButtons from "./SideBarButtons";
 import AssignmentsCards from "./AssignmentsCards";
 import DemoButton from "./DemoButton";
+import { IoLogoInstagram } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -114,12 +120,45 @@ const Hero = () => {
                 alt=""
                 className="mt-7"
               />
-              <div className="flex flex-row text-white mt-10 gap-5 ml-4">
+              <div className="flex flex-row text-white mt-5 gap-5 ml-4">
                 {" "}
                 <FaArrowLeft />
                 <FaArrowRight />
               </div>
             </div>
+          </div>
+        </div>
+        <div className="container h-[10vh] flex flex-col ">
+          <div className="border border-t-1 border-gray-300 mt-24"></div>
+          <div className="flex flex-row justify-between gap-10 mt-14 items-center text-center">
+            <div className="flex gap-2">
+              <img src="./src/assets/images/logo.png" alt="" className="h-10" />
+              <h1 className=" text-2xl font-medium">Kwarapoly</h1>
+            </div>
+            <ul className="flex flex-row gap-2">
+              <l1>Home</l1>
+              <l1>For students</l1>
+              <l1>For lecturers</l1>
+              <l1>Testimonies</l1>
+            </ul>
+            <div className="flex flex-row gap-3">
+              <div className="bg-[#34753e] flex justify-center items-center h-10 w-10 text-white text-xl  rounded-full">
+                <IoLogoInstagram />
+              </div>
+              <div className="bg-[#34753e] flex justify-center items-center h-10 w-10 text-white text-xl  rounded-full">
+                <FaFacebook />
+              </div>
+              <div className="bg-[#34753e] flex justify-center items-center h-10 w-10 text-white text-xl  rounded-full">
+                <FaTwitter />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row justify-center items-center mt-20 text-[#505050] tracking-wider space-x-2">
+            <p>
+              {" "}
+              <FaRegCopyright />
+            </p>
+            <p> Copyright 2023 Kwarapoly All Rights Reserved</p>
           </div>
         </div>
 
