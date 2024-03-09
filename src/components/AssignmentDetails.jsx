@@ -1,6 +1,7 @@
 import React from "react";
 import TopStudents from "./TopStudents";
 import { CiMenuKebab } from "react-icons/ci";
+import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import AssignmentsCards from "./AssignmentsCards";
 
 const AssignmentDetails = () => {
@@ -112,9 +113,9 @@ const AssignmentDetails = () => {
           </div>
         </div>
         <div className="w-[40%] h-[130vh] flex flex-col gap-5 rounded-lg mt-4">
-          <div className=" w-[100%] h-[60%] bg-gray-100 p-5 rounded-lg flex flex-col">
+          <div className=" w-[100%] h-[50%] bg-gray-100 p-5 rounded-lg flex flex-col">
             <div className="flex flex-row justify-between">
-              <h1 className="font-sans-serif">Assignments</h1>
+              <h1 className="font-sans-serif">Latest Assignments</h1>
               <p className="bg-[#ffffff] px-4 py-1 border text-[14px] flex justify-center items-center rounded-xl font-sans-serif">
                 See all
               </p>
@@ -146,7 +147,14 @@ const AssignmentDetails = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-end w-[100%] h-[40%] bg-white p-5 rounded-lg "></div>
+          <div className="flex flex-col w-[100%] h-[40%] bg-white p-5 rounded-lg ">
+            <div className="flex flex-row justify-between">
+              <h1 className="font-sans-serif">Old Assignments</h1>
+              <p className="bg-[#ffffff] px-4 py-1  text-xl flex justify-center items-center font-sans-serif">
+              <HiOutlineDotsHorizontal/>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
