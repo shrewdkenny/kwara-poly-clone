@@ -7,7 +7,7 @@ import AssignmentsCards from "./AssignmentsCards";
 const AssignmentDetails = () => {
   return (
     <div>
-      <div className="flex flex-row px-7 justify-between gap-8  w-[100%] ">
+      <div className="flex flex-row px-7 justify-between gap-8 w-[100%] h-[100vh] ">
         <div className=" flex flex-col gap-7">
           <div className="flex flex-row gap-3">
             <div className="flex flex-col bg-white  h-[100px] w-[200px] mt-5 rounded-lg ">
@@ -85,10 +85,10 @@ const AssignmentDetails = () => {
                 matricNumber="HND/21/COM/FT/230"
                 icon={<CiMenuKebab />}
               />
-              <TopStudents
-                emoji="👨🏽‍🏫"
-                name="Akinyooye Stephen"
-                matricNumber="HND/21/COM/FT/760"
+                <TopStudents
+                emoji="🙍🏾‍♂️"
+                name="Abubakar Quadri"
+                matricNumber="HND/21/COM/FT/100"
                 icon={<CiMenuKebab />}
               />
               <TopStudents
@@ -151,8 +151,80 @@ const AssignmentDetails = () => {
             <div className="flex flex-row justify-between">
               <h1 className="font-sans-serif">Old Assignments</h1>
               <p className="bg-[#ffffff] px-4 py-1  text-xl flex justify-center items-center font-sans-serif">
-              <HiOutlineDotsHorizontal/>
+                <HiOutlineDotsHorizontal />
               </p>
+            </div>
+            <div className="flex flex-col mt-7 w-[80%] gap-8">
+              <div className="flex flex-col">
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-xl text-[#535358]">
+                    Irrigation and Drainage
+                  </h1>
+                  <p className="text-[#1c1e24] font-semibold text-xl">75/100</p>
+                </div>
+                <div className="relative flex flex-col">
+                  <input
+                    type="range"
+                    className="appearance-none w-full  bg-[#fef6ed] rounded-lg outline-none overflow-hidden h-[25px] mt-4"
+                  />
+                  <input
+                    type="range"
+                    className="appearance-none w-[250px] bg-[#f17f30] rounded-e-lg  outline-none overflow-hidden h-[25px] mt-4 absolute"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-xl text-[#535358]">Character building</h1>
+                  <p className="text-[#1c1e24] font-semibold text-xl">65/100</p>
+                </div>
+                <div className="relative flex flex-col">
+                  <input
+                    type="range"
+                    className="appearance-none w-full  bg-[#eff7fe] rounded-lg outline-none overflow-hidden h-[25px] mt-4"
+                  />
+                  <input
+                    type="range"
+                    className="appearance-none w-[180px] bg-[#0177fb] rounded-e-lg  outline-none overflow-hidden h-[25px] mt-4 absolute"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-xl text-[#535358]">
+                    Transportation Planning
+                  </h1>
+                  <p className="text-[#1c1e24] font-semibold text-xl">30/100</p>
+                </div>
+                <div className="relative flex flex-col">
+                  <input
+                    type="range"
+                    className="appearance-none w-full  bg-[#eff7fe] rounded-lg outline-none overflow-hidden h-[25px] mt-4"
+                  />
+                  <input
+                    type="range"
+                    className="appearance-none w-[100px] bg-[#7d88fc] rounded-e-lg  outline-none overflow-hidden h-[25px] mt-4 absolute"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-xl text-[#535358]">
+                    Engineering Management
+                  </h1>
+                  <p className="text-[#1c1e24] font-semibold text-xl">20/100</p>
+                </div>
+                <div className="relative flex flex-col">
+                  <input
+                    type="range"
+                    className="appearance-none w-full  bg-[#eff7fe] rounded-lg outline-none overflow-hidden h-[25px] mt-4"
+                  />
+                  <input
+                    type="range"
+                    className="appearance-none w-[80px] bg-[#ec5491] rounded-e-lg  outline-none overflow-hidden h-[25px] mt-4 absolute"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
