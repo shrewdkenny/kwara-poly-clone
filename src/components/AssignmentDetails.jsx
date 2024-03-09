@@ -120,12 +120,33 @@ const AssignmentDetails = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <AssignmentsCards/>
+              <AssignmentsCards
+                image="./src/assets/images/cec1.png"
+                course=" CEC 424: Irrigation & Drainage"
+                dateTime="May 14, 08:30 PM"
+                icon={<CiMenuKebab />}
+              />
+              <AssignmentsCards
+                image="./src/assets/images/cec2.png"
+                course="CBS 411: Character Building"
+                dateTime="May 18, 10:30 PM"
+                icon={<CiMenuKebab />}
+              />
+              <AssignmentsCards
+                image="./src/assets/images/cec3.png"
+                course="CEC 406: Transportation Plan"
+                dateTime="May 18, 10:30 PM"
+                icon={<CiMenuKebab />}
+              />
+              <AssignmentsCards
+                image="./src/assets/images/cec4.png"
+                course="CEC 428: Engineering Manage..."
+                dateTime="May 22, 10:30 PM"
+                icon={<CiMenuKebab />}
+              />
             </div>
           </div>
-          <div className="flex flex-col justify-end w-[100%] h-[40%] bg-white p-5 rounded-lg ">
-            dfmfmd,
-          </div>
+          <div className="flex flex-col justify-end w-[100%] h-[40%] bg-white p-5 rounded-lg "></div>
         </div>
       </div>
     </div>
