@@ -5,7 +5,7 @@ import AssignmentDetails from "../components/AssignmentDetails";
 const OverView = () => {
   return (
     <div>
-      <div className="h-[120vh] w-full flex flex-row  bg-[#fcfcfc]">
+      <div className="h-[142vh] w-[100vw] flex flex-row bg-[#fcfcfc]">
         <SideBar />
         <div className="flex flex-col">
           <OverViewPageHeader />
